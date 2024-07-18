@@ -1,0 +1,152 @@
+body {
+     /* Make the body element occupy the full viewport height */
+    margin: 0;
+    display: flex; /* Optionally, use flex for vertical alignment */
+    flex-direction: column; /* If you want to align content vertically */
+}
+
+.fullpage{
+    margin-top: 140px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main-products{
+    
+   
+    display:grid;
+        grid-template-columns: 31% 1fr;       
+        flex: 1;
+        padding: 2px;
+        
+}
+@media(max-width:800px){
+    .main-products{
+        grid-template-columns: 1fr ;
+    }
+    .productpage-image{
+        max-height:300px;
+        max-width:300px;
+        text-align: center;
+    }
+    .productpage-info{
+        padding-left: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+   
+   
+ 
+
+
+.productpage-image{
+    width: 100%;
+   height:100%;
+}
+
+.productpage-image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    
+}
+.productpage-name{
+    
+    margin-bottom: 0px;
+}
+.productpage-info{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    font-family: Josefin Sans, Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    padding-right: 15px;
+    
+}
+.productpage-choices{
+    display: flex;
+   flex-direction: column;
+    width: 100%;
+}
+.productpage-choose-size{
+    margin-bottom: 10px;
+}
+.productpage-name{
+    margin-bottom: 10px;
+}
+
+.dropdown .dropbtn {
+    
+    padding: 10px;
+    margin-right: 10px;
+    font-family: Josefin Sans, Arial, Helvetica, sans-serif;
+    padding: 2px;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    height: 50px;
+    color: black;
+    background-color: rgb(203, 203, 203);
+}
+.dropbtn:hover{
+    background-color: rgb(184, 184, 184);
+}
+.dropdown .dropdown-content {
+    font-size: 18px;
+    display: none;
+    position: absolute;
+    background-color: rgb(238, 238, 238);
+    margin-top: 5px;
+    margin-right: 5px;
+    max-width: 67.6%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    color: black;
+
+   
+}
+.description {
+    padding: 10px;
+    
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+
+
+}
+
+.dropdown-content{
+    margin-bottom: 10px;
+}
+
+.more-options{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: Josefin Sans, Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+.productpage-product-container{
+    font-family: Josefin Sans, Arial, Helvetica, sans-serif;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+  
+    display: flex;
+    flex-direction: column;
+}
+
+@media(max-width:800px){
+    .dropdown{
+       padding-bottom: 100px;
+       
+    }
+    .dropdown-content{
+       
+        width:100%;
+    }
+}

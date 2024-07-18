@@ -1,0 +1,366 @@
+body{
+    background-color: white;
+    margin: 0;
+    font-family: Josefin Sans, Arial, Helvetica, sans-serif;
+
+}
+.main{
+    margin-top: 120px;
+}
+button {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* You can do the same for links */
+a {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+select {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+
+#search-results {
+    position: absolute;
+    top: 0px; /* Set the top position to the height of the search bar */
+    left: 0;
+    
+    width: 84.5%;
+    min-width: 190px;
+    max-width: inherit;
+    border: 1px solid #ccc;
+    max-height: 100px;
+    overflow: auto;
+    
+    z-index: 600;
+    color: black;
+    background-color: rgb(228, 226, 226);
+    margin-top: 84px;
+    font-family: Josefin Sans, Arial, Helvetica, sans-serif;
+    
+}
+#search-results div{
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+    
+}
+#search-results div:hover{
+    font-weight: 700;
+}
+#search-results::-webkit-scrollbar{
+    background: white;
+  border-radius: 5px;
+}
+#search-results::-webkit-scrollbar-thumb{
+    background-color: rgb(184, 184, 184);
+    border-radius: 5px;;
+}
+
+
+
+
+
+.sticky_navbar{
+
+    height: 120px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    z-index: 100;
+}
+.navbar-left{
+display: flex;
+align-items: center;
+}
+.navbar-center{
+  
+    flex: 1;
+    margin-left: 35px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.navbar-right{
+    display: flex;
+    align-items: center;
+   
+   margin-right: 20px;
+   flex-shrink: 0;
+}
+.logo-nav{
+    height: 4.25em;
+    margin-left: 24px;
+    margin-top: 10px;
+}
+.hamburger-nav{
+    height: 3.75em;
+    margin-left: 24px;
+    margin-top: -5px;
+    cursor: pointer;
+
+}
+
+
+.sidebar-container{
+    display: flex;
+}
+.sidebar{
+    height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 700;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  
+}
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.05s;
+    cursor: pointer;
+  }
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  .sidebar .close-button {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    cursor: pointer;
+  }
+
+
+
+.search-bar{
+    flex:1;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgray;
+    font-family: Josefin Sans;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0,0,0, 0.05);
+    width:0;
+    z-index: 601;
+    
+    
+}
+#search-button{
+    height: 40px;
+   
+    background-color: rgb(240,240,240);
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgray;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    margin-left: -1px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+#search-button:hover{
+    background-color: rgb(194, 192, 192);
+}
+
+.search-icon{
+    height: 25px;
+
+}
+.product-container {
+    font-family: Josefin Sans, Arial, Helvetica, sans-serif;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+  
+    border-right: 1px solid rgb(231, 231, 231);
+    border-bottom: 1px solid rgb(231, 231, 231);
+  
+    display: flex;
+    flex-direction: column;
+  }
+  .product-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    height: 180px;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+  }
+  .product-image {
+   
+    max-width: 100%;
+    max-height: 100%;
+  }  
+.product-info{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 7px;
+}
+
+.products-grid{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+       
+}
+
+@media(min-width:801px) and (max-width: 1000px){
+    .products-grid{
+        grid-template-columns: 1fr 1fr;
+}
+#search-results{
+    width: 82%;
+}
+
+}
+.choose-size{
+    margin-bottom: 7px;
+}
+
+.img-product{
+    width: 100%;
+}
+.cart-add{
+    font-family: Josefin Sans, Arial, Helvetica, sans-serif;
+    padding: 2px;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(203, 203, 203);
+    color: black;
+    font-weight: normal;
+    
+}
+.cart-add:hover{
+    background-color: rgb(184, 184, 184);
+    cursor: pointer;
+}
+.size-choice{
+    font-family: Josefin Sans, Arial, Helvetica, sans-serif;
+    padding: 2px;
+    border: solid black 1px;
+    border-radius: 3px;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: black;
+
+}
+.cart{
+    
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .cart-quantity {
+    font-family:Josefin Sans, Arial, Helvetica, sans-serif; ;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    top: 4px;
+    left: 32px;
+    width: 26px;
+    text-align: center;
+  }
+  .search-heading{
+    color: black;
+    font-size: 40px;
+    font-weight: 700;
+   margin: 10px;
+  }
+
+  .about-container{
+    margin-top: 50px;
+    font-size: 25px;
+    padding-left: 20px;
+    padding-right: 10px;
+    
+  }
+  .about-title{
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  .about-main{
+    margin-top: 120px;
+  }
+
+  @media(max-width:800px){
+    
+    
+    .products-grid{
+        grid-template-columns: 1fr ;
+    }
+    #search-results{
+        width: 90%;
+        top: 0px;
+    }
+    .navbar-center{
+        margin-left: 35px;
+        margin-right: 5px;
+
+    }
+    .logo-nav{
+        display:none;
+    }
+    #search-button {
+        height: 40px;; /* Adjusted to match the height of the search bar */
+       
+        z-index: 599;
+    }
+    .search-bar {
+        height: 36px;
+    }
+   .cart-icon{
+    height: 2em;
+   }
+   .hamburger-nav{
+    height: 2em;
+   }
+   .cart-quantity{
+    display: none;
+   }
+}
+
+@media(max-width:450px){
+    #search-button {
+        height: 46px;
+        margin-left:-5px;
+        z-index: 599;
+    }
+}

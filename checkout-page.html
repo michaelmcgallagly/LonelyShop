@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href = "Styles/style.css">
+    <link rel="stylesheet" href = "Styles/style-checkout-page.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">    <link rel="shortcut icon" href="#">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+<body>
+    <div class="sticky_navbar">
+        <div class ="navbar-left">
+            <img src="images/hamburger.jpg" class="hamburger-nav"> 
+           <a href="index.html"> <img src ="images/Logo.png" class="logo-nav"> </a>
+    
+        </div>
+        <div class ="navbar-center">
+            
+               
+            <input class="search-bar" type="text" placeholder="Search" id="search-id">
+            <button id="search-button">
+                <img src="images/search.svg" class="search-icon">
+                </button>
+                
+                <div id="search-results"></div>
+        </div>
+        
+        
+        
+        
+        <div class="navbar-right">
+            <div class="cart">
+                <a href="checkout-page.html"><img class="cart-icon" src="images/cart-icon.png"></a>
+                <div class="cart-quantity js-cart-quantity"></div>
+                </div>
+        </div>
+    </div>
+    <div class="sidebar-container">
+        <div class="sidebar">
+        <a><div class="close-button">x</div></a>
+        <a href="About.html"> About</a>
+        <a href="index.html"> Shop</a>
+      
+        </div>
+        </div>
+
+        <div class="main-checkout">
+            
+      
+            <div class="checkout-grid">
+              <div class="order-summary js-order-summary">
+                
+              </div>
+      
+              <div class="payment-summary js-payment-summary">
+                <div class="fixing-border">
+                <div class="payment-title">Order Summary</div>
+                <div class="payment-checkout">
+
+                    
+                </div>
+                <div class="Total">
+                    
+                </div>
+                </div>
+              </div>
+             
+              </div>
+            </div>
+          
+</body>
+
+<script src ="scripts/checkout.js" type="module"></script>
+
+</html>
